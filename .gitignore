@@ -124,3 +124,6 @@ guide.md
 
 # Mac related files
 .DS_Store
+
+# App related folder
+upload/
