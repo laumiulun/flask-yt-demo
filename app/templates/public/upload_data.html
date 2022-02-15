@@ -8,23 +8,27 @@
   <div class="row">
     <div class="col">
 
-      <h1>Upload STL File</h1>
+      <h1>Upload Data File</h1>
       <hr>
 
       <form action="/upload-data" method="POST" enctype="multipart/form-data">
 
         <div class="form-group">
-          <label>Select STL file</label>
+          <!-- <label>Select STL file</label> -->
+          <label for="formFile" class="form-label">Select STL file</label>
           <div class="custom-file">
-            <input type="file" class="custom-file-input" name="image" id="image">
-            <label class="custom-file-label" for="image">{{ filename }}</label>
+            <!-- Default one -->
+            <!-- <input type="file" class="custom-file-input" name="image" id="image"> -->
+            <!-- <label class="custom-file-label" for="image">{{ filename }}</label> -->
+            <!-- Simple HTML one  -->
+            <!-- <input type = "file" class="custom-file-input" name = "file" > -->
+            <!-- <input type = "submit" value = "Submit" /> -->
+            <!-- Bootstrap one  -->
+            <input class="form-control" type="file" id="formFile" name="file">
           </div>
         </div>
         <button type="submit" class="btn btn-primary">Convert</button>
-
-
       </form>
-
     </div>
   </div>
 </div>

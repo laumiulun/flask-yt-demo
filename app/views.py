@@ -16,7 +16,7 @@ def upload_data():
 
         if request.files:
 
-            data = request.files["image"]
+            data = request.files["file"]
             if data.filename  == "":
                 print("No filename")
                 return redirect(request.url)
