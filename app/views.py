@@ -3,7 +3,7 @@ from app import app
 from flask import render_template, request, redirect
 
 
-@app.route("/upload-image", methods=["GET", "POST"])
+@app.route("/upload-data", methods=["GET", "POST"])
 def upload_image():
 
     if request.method == "POST":
@@ -16,7 +16,7 @@ def upload_image():
 
             return redirect(request.url)
 
-    return render_template("public/upload_image.html")
+    return render_template("public/upload_data.html")
 
 
 @app.route("/")
